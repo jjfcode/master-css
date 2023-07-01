@@ -133,3 +133,7 @@ body {
     text-shadow: 2px 2px black;
     margin: 27px auto;
 }
+
+.icon {
+    font-family: WebSymbolsRegular;
+}
