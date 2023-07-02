@@ -1,136 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Master en css</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <!-- Inicio de Cabecera -->
     <header id="header">
-        <div class="wrap">
-            <div id="logo">
-                <spam class="gear">S</spam>
-                <h3>BLOG</h3>
-            </div>
-            <nav id="menu">
-                <ul>
-                    <li><a href="#">INICIO</a></li>
-                    <li><a href="#">BLOG</a></li>
-                    <li><a href="#">FORMACION</a></li>
-                    <li><a href="#">CONTACTO</a></li>
-                </ul>
-            </nav>
+      <div class="wrap">
+        <div id="logo">
+          <spam class="gear">S</spam>
+          <h3>BLOG</h3>
         </div>
+        <nav id="menu">
+          <ul>
+            <li><a href="#">INICIO</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">FORMACION</a></li>
+            <li><a href="#">CONTACTO</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <!-- Fin de Cabecera -->
 
-
     <section class="wrap">
-        <section id="info">
-            <!-- Inicio Banner -->
-            <div id="banner">
-                <h1>Curso de desarrollo web con Victor Robles WEB</h1>
+      <section id="info">
+        <!-- Inicio Banner -->
+        <div id="banner">
+          <h1>Curso de desarrollo web con Victor Robles WEB</h1>
+        </div>
+        <!-- Fin Banner -->
+
+        <!-- Inicio Tarjetas -->
+        <div id="cards">
+          <div class="card">
+            <p class="icon">H</p>
+            <h2 class="category">Desarrollo Web</h2>
+            <p class="description">
+              Aprende los principales lenguages para desarrollar webs
+              !combiertete en un webmaster!
+            </p>
+          </div>
+
+          <div class="card">
+            <p class="icon">_</p>
+            <h2 class="category">Sistemas operativos</h2>
+            <p class="description">
+              Aprende a administrar leguajes windows y linux
+            </p>
+          </div>
+
+          <div class="card">
+            <p class="icon">S</p>
+            <h2 class="category">Hardware</h2>
+            <p class="description">Conoce los entresijos del hardware</p>
+          </div>
+
+          <div class="card">
+            <p class="icon">u</p>
+            <h2 class="category">Redes e Internet</h2>
+            <p class="description">
+              Aprende a configurar y administrar redes informaticas y
+              servidores.
+            </p>
+          </div>
+
+          <div class="card">
+            <p class="icon">a</p>
+            <h2 class="category">Bases de datos</h2>
+            <p class="description">
+              Aprende a montar y administrar bases de datos.
+            </p>
+          </div>
+        </div>
+        <!-- Fin Tajetas -->
+      </section>
+
+      <!-- Inicio Barra Lateral -->
+      <aside id="lateral">
+        <h3>BUSCAR</h3>
+        <div id="search">
+          <form action="">
+            <input type="text" name="" />
+            <input type="button" value="L" class="icon" />
+          </form>
+        </div>
+
+        <h3>LOGIN</h3>
+        <div id="login" class="aside-box">
+          <form>
+            <label id="user" for="" class="icon">U</label>
+            <input type="email" />
+
+            <label id="password" for="" class="icon">w</label>
+            <input type="password" />
+
+            <input type="submit" value="Entrar" />
+            <input type="reset" value="Limpiar" />
+
+            <a href="#">Registrate aqui</a>
+            <a href="#">Has olvidado tu contrasena?</a>
+          </form>
+        </div>
+
+        <h3>REDES SOCIALES</h3>
+        <div id="social" class="aside-box">
+          <div class="twiter">
+            <a href="#" class="icon">t</a>
+          </div>
+          <div class="facebook">
+            <a href="#" class="icon">f</a>
+          </div>
+          <div class="youtube">
+            <a href="#" class="icon">y</a>
+          </div>
+        </div>
+
+        <h3>PATROCINADORES</h3>
+        <div id="sponsor" class="aside-box"></div>
+      </aside>
+      <!-- Fin de Barra Lateral -->
+
+      <!-- Inicio Articulos -->
+      <section id="articles">
+        <h2>Ultimos articulos</h2>
+        <article>
+          <div class="date">
+            <span>Fecha: 12 dic</span>
+            <span>Categoria: Pruebas</span>
+          </div>
+          <h4>
+            <a href="#">Titulo del articulo</a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+              facilis cumque ipsam illum cupiditate sequi quisquam, hic
+              laboriosam consequuntur explicabo autem ad. Earum sapiente eos
+              inventore ea perspiciatis blanditiis sint.
+            </p>
+          </h4>
+        </article>
+
+        <article>
+            <div class="date">
+              <span>Fecha: 12 dic</span>
+              <span>Categoria: Pruebas</span>
             </div>
-            <!-- Fin Banner -->
+            <h4>
+              <a href="#">Titulo del articulo</a>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                facilis cumque ipsam illum cupiditate sequi quisquam, hic
+                laboriosam consequuntur explicabo autem ad. Earum sapiente eos
+                inventore ea perspiciatis blanditiis sint.
+              </p>
+            </h4>
+          </article>
 
-            <!-- Inicio Tarjetas -->
-            <div id="cards">
-                <div class="card">
-                    <p class="icon">H</p>
-                    <h2 class="category">Desarrollo Web</h2>
-                    <p class="description">
-                        Aprende los principales lenguages para desarrollar webs !combiertete en un webmaster!
-                    </p>
-                </div>
-
-                <div class="card">
-                    <p class="icon">_</p>
-                    <h2 class="category">Sistemas operativos</h2>
-                    <p class="description">
-                        Aprende a administrar leguajes windows y linux
-                    </p>
-                </div>
-
-                <div class="card">
-                    <p class="icon">S</p>
-                    <h2 class="category">Hardware</h2>
-                    <p class="description">
-                        Conoce los entresijos del hardware
-                    </p>
-                </div>
-
-                <div class="card">
-                    <p class="icon">u</p>
-                    <h2 class="category">Redes e Internet</h2>
-                    <p class="description">
-                        Aprende a configurar y administrar redes informaticas y servidores.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <p class="icon">a</p>
-                    <h2 class="category">Bases de datos</h2>
-                    <p class="description">
-                        Aprende a montar y administrar bases de datos.
-                    </p>
-                </div>
+          <article>
+            <div class="date">
+              <span>Fecha: 12 dic</span>
+              <span>Categoria: Pruebas</span>
             </div>
-            <!-- Fin Tajetas -->
+            <h4>
+              <a href="#">Titulo del articulo</a>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                facilis cumque ipsam illum cupiditate sequi quisquam, hic
+                laboriosam consequuntur explicabo autem ad. Earum sapiente eos
+                inventore ea perspiciatis blanditiis sint.
+              </p>
+            </h4>
+          </article>
 
-        </section>
-
-        <!-- Inicio Barra Lateral -->
-        <aside id="lateral">
-
-            <h3>BUSCAR</h3>
-            <div id="search">
-                <form action="">
-                    <input type="text" name="">
-                    <input type="button" value="L" class="icon">
-                </form>
+          <article>
+            <div class="date">
+              <span>Fecha: 12 dic</span>
+              <span>Categoria: Pruebas</span>
             </div>
+            <h4>
+              <a href="#">Titulo del articulo</a>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                facilis cumque ipsam illum cupiditate sequi quisquam, hic
+                laboriosam consequuntur explicabo autem ad. Earum sapiente eos
+                inventore ea perspiciatis blanditiis sint.
+              </p>
+            </h4>
+          </article>
 
-            <h3>LOGIN</h3>
-            <div id="login" class="aside-box">
-                <form>
-                    <label id="user" for="" class="icon">U</label>
-                    <input type="email">
-
-                    <label id="password" for="" class="icon">w</label>
-                    <input type="password">
-
-                    <input type="submit" value="Entrar">
-                    <input type="reset" value="Limpiar">
-
-                    <a href="#">Registrate aqui</a>
-                    <a href="#">Has olvidado tu contrasena?</a>
-                </form>
+          <article>
+            <div class="date">
+              <span>Fecha: 12 dic</span>
+              <span>Categoria: Pruebas</span>
             </div>
+            <h4>
+              <a href="#">Titulo del articulo</a>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                facilis cumque ipsam illum cupiditate sequi quisquam, hic
+                laboriosam consequuntur explicabo autem ad. Earum sapiente eos
+                inventore ea perspiciatis blanditiis sint.
+              </p>
+            </h4>
+          </article>
 
-            <h3>REDES SOCIALES</h3>
-            <div id="social" class="aside-box">
-                <div class="twiter">
-                    <a href="#" class="icon">t</a>
-                </div>
-                <div class="facebook">
-                    <a href="#" class="icon">f</a>
-                </div>
-                <div class="youtube">
-                    <a href="#" class="icon">y</a>
-                </div>
+          <article>
+            <div class="date">
+              <span>Fecha: 12 dic</span>
+              <span>Categoria: Pruebas</span>
             </div>
-
-            <h3>PATROCINADORES</h3>
-            <div id="sponsor" class="aside-box">
-
-            </div>
-
-        </aside>
-        <!-- Fin de Barra Lateral -->
+            <h4>
+              <a href="#">Titulo del articulo</a>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                facilis cumque ipsam illum cupiditate sequi quisquam, hic
+                laboriosam consequuntur explicabo autem ad. Earum sapiente eos
+                inventore ea perspiciatis blanditiis sint.
+              </p>
+            </h4>
+          </article>
+          <article id="blog">
+            <a href="#">Ir al blog</a>
+          </article>
+      </section>
+      <!-- Fin Articulos -->
     </section>
-
-
-</body>
+  </body>
 </html>
