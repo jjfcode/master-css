@@ -222,5 +222,18 @@
         min-height: auto;
     }
 
+    #footer {
+        height: auto;
+        padding-bottom: 40px;
+    }
 
+    #footer .wrap > div {
+        width: 100%;
+        margin: 0px auto;
+        margin-top: 25px;
+    }
+
+    #footer h5 {
+        font-size: 25px;
+    }
 }
