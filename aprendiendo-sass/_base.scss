@@ -1,8 +1,10 @@
+// Variables
 $fuente-tipica: sans-serif, Helvetica, Arial;
 $color-fondo: #ccc;
 $color-letra: red;
 $color-secundario: rgb(122, 20, 20);
 
+// Uso de Variables
 body {
     background-color: $color-fondo;
 }
@@ -16,6 +18,7 @@ p {
     color: $color-secundario;
 }
 
+// Anidacion
 .caja {
     border: 1px solid black;
     width: 500px;
@@ -40,4 +43,19 @@ p {
             color: orange;
         }
     }
+}
+
+// Mixins / Funciones
+@mixin crearBorder($color, $size, $shadow) {
+    border: $size solid $color;
+    border-radius: $size;
+    box-shadow: 0px 0px $size $color;
+}
+
+.caja {
+    @include crearBorder(red, 10px, black)
+}
+
+.listado {
+    @include crearBorder(green, 5px, yellow)
 }
