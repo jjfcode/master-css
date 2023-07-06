@@ -8,6 +8,8 @@ body {
     /* flex-direction: row;
     flex-wrap: wrap; */
     flex-flow: row wrap;
+    height: 600px;
+    align-items: flex-start;
     justify-content: space-around;
     border: 3px solid black;
     padding: 5px;
