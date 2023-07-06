@@ -24,6 +24,7 @@ body {
 }
 
 .red {
+    flex-shrink: 0;
     background: red;
 }
 
