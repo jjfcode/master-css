@@ -13,7 +13,7 @@ body {
 }
 
 .caja {
-    flex-grow: 1;
+    flex-basis: 25%;
     font-size: 20px;
     font-weight: bold;
     color: white;
@@ -24,18 +24,21 @@ body {
 }
 
 .red {
-    flex-shrink: 0;
+    flex-basis: calc((100% / 3) - 68px);
     background: red;
 }
 
 .green {
+    flex-basis: calc((100% / 3) - 68px);
     background: green;
 }
 
 .blue {
+    flex-basis: calc((100% / 3) - 68px);
     background: blue;
 }
 
 .orange {
+    flex-basis: 100%;
     background: orange;
 }
