@@ -9,7 +9,10 @@ body{
     /* definir el grid layout */
     display: grid;
     /* grid-template-columns: 50% 50%; */
-    grid-template-columns: calc(25% - 7.5px) calc(25% - 7.5px) calc(25% - 7.5px) calc(25% - 7.5px);
+    /* grid-template-columns: calc(25% - 7.5px) calc(25% - 7.5px) calc(25% - 7.5px) calc(25% - 7.5px); */
+    /* grid-template-columns: repeat(4, calc(25% - 7.5px)); */
+    /* grid-template-columns: repeat(2, calc(25% - 10px)) 15% calc(35% - 10px); */
+    grid-template-columns: repeat(4, 1fr);
     /* Espacio entre elementos grid */
     /* row-gap reemplaza grid-gap */
     row-gap: 10px;
