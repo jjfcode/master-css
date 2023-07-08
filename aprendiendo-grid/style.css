@@ -5,6 +5,7 @@ body{
 
 .layout{
     width: 1200px;
+    height: 400px;
     margin: 0px auto;
     /* definir el grid layout */
     display: grid;
@@ -12,7 +13,8 @@ body{
     /* grid-template-columns: calc(25% - 7.5px) calc(25% - 7.5px) calc(25% - 7.5px) calc(25% - 7.5px); */
     /* grid-template-columns: repeat(4, calc(25% - 7.5px)); */
     /* grid-template-columns: repeat(2, calc(25% - 10px)) 15% calc(35% - 10px); */
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr 3fr;
     /* Espacio entre elementos grid */
     /* row-gap reemplaza grid-gap */
     row-gap: 10px;
@@ -44,4 +46,12 @@ body{
 
 .layout .pink{
     background: palevioletred;
+}
+
+.layout .orange{
+    background: orange;
+}
+
+.layout .lightblue{
+    background: lightblue;
 }
