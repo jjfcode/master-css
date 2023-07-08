@@ -20,6 +20,9 @@ body{
 }
 
 #cabecera {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     grid-column: 1 / 6;
     background: blue;
     color: white;
