@@ -181,6 +181,25 @@
             Sacar Ventana
           </button>
 
+                  <!-- Barra progreso -->
+        <div class="progress mt-5">
+          <div id="barra-progreso" class="progress-bar bg-success w-0" role="progressbar">
+              50%
+          </div>
+        </div>
+
+        <script>
+            var contador = 0;
+            setInterval(function(){
+                contador++;
+                var barra = document.querySelector("#barra-progreso");
+                barra.style.width = contador + '%';
+                barra.innerHTML = contador + '%';
+            }, 1000);
+        </script>
+
+          
+
           <!-- Modal -->
           <div
             class="modal fade"
@@ -221,6 +240,7 @@
             </div>
           </div>
         </div>
+
         <!-- Collapse -->
         <a class="btn btn-success" data-toggle="collapse" href="#informacion" role="button">
             Mostrar informacion
@@ -310,7 +330,9 @@
             </ul>
         </nav>
       </div>
+      
     </div>
+    
 
     <script
       type="text/javascript"
