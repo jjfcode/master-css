@@ -200,6 +200,10 @@
             }, 100);
         </script>
 
+        <button type="button" class="btn-tool btn btn-danger mt-3" data-toggle="tooltip" data-placement="bottom" title="Si das click sacaras una alerta">
+            Alerta
+        </button>
+
           
 
           <!-- Modal -->
@@ -340,12 +344,17 @@
       type="text/javascript"
       src="jquery/code.jquery.com_jquery-3.7.0.min.js"
     ></script>
+    <script>
+        type="text/javascript"
+        src="jquery/cdn.jsdelivr.net_npm_popper.js@1.16.1_dist_umd_popper.min.js"
+    </script>
     <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
     <script>
       $(document).ready(function () {
         $(".carousel").carousel({
-          interval: 3000,
+          interval: 2000,
         });
+        $(".btn-tool").tooltip();
       });
     </script>
   </body>
